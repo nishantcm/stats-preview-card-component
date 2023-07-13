@@ -1,0 +1,110 @@
+.page-wraper {
+    width: 375px;
+    height: 100%; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 100px 0 100px 0;
+    background-color: hsl(233, 47%, 7%);
+
+}
+.container {
+    
+    background-color: hsl(244, 38%, 16%);
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+}
+.image{
+    width: 300px;
+    height: 250px;
+    background-color: hsl(277, 64%, 61%);
+}
+.mobile {
+    display: block;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.desktop {
+    display: none;
+}
+.header {
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+}
+.header span{
+    color: hsl(277, 64%, 61%);
+}
+.sub-head {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
+}
+.sub-para{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+.para {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 40px 40px 40px;
+    line-height: 20px;
+
+}
+
+@media (min-width:1440px){
+    .page-wraper{
+       width: 1440px; 
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: hsl(244, 38%, 16%);
+        width: 1000px;
+        height: 450px;
+        margin: auto;
+        border-radius: 5px;
+        
+    }
+    .content{
+        /* width: 500px;
+        height: 450px;
+        padding: 0;
+        margin: 0; */
+    }
+    .desktop{
+        display: block;
+        width: 500px;
+        height: 400px;
+
+
+    }
+    .mobile {
+        display: none;
+    }
+    
+    .sub-head{
+        display: inline;
+    }
+    .sub-para{
+        display: inline-block;
+    }
+}
