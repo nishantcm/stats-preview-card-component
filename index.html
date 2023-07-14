@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="reset-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
         <title>Stats Preview Card Component</title>
 
     </head>
@@ -12,19 +16,25 @@
        <div class="page-wraper">
         <div class="container">
             <div class="image">
-                <feFlood flood-color="hsl(277, 64%, 61%)" result="flood" />
-                <img class="mobile" src="image-header-mobile.jpg" alt="business discussion">
-                <img class="desktop" src="image-header-desktop.jpg" alt="business discussion">
+                <div class="overlay"></div>
             </div>
             <div class="content">
                 <h1 class="header">Get <span>insights</span> that help your business grow.</h1>
                 <p class="para">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-                <h3 class="sub-head">10k+</h3>
-                <p class="sub-para">COMPANIES</p>
-                <h3 class="sub-head">314</h3>
-                <p class="sub-para">TEMPLATES</p>            
-                <h3 class="sub-head">12M+</h3>
-                <P class="sub-para">QUERIES</P>
+                <div class="sub-content">
+                <div class="element1">
+                    <h3 class="sub-head1">10k<span>+</span></h3>
+                    <p class="sub-para1">COMPANIES</p>
+                </div>
+                <div class="element2">
+                    <h3 class="sub-head2">314</h3>
+                    <p class="sub-para2">TEMPLATES</p>
+                </div>
+                <div class="element3">           
+                    <h3 class="sub-head3">12M<span>+</span></h3>
+                    <P class="sub-para3">QUERIES</P>
+                </div> 
+                </div>
             </div>
         </div>
        </div> 

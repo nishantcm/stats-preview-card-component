@@ -9,32 +9,31 @@
 
 }
 .container {
-    
     background-color: hsl(244, 38%, 16%);
     width: 300px;
     margin: auto;
     border-radius: 5px;
 }
 .image{
+    
+    background-image: url(image-header-mobile.jpg);
+    background-size: 300px 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+}
+.overlay {
     width: 300px;
     height: 250px;
     background-color: hsl(277, 64%, 61%);
-}
-.mobile {
-    display: block;
-    width: 300px;
-    height: 250px;
-    margin: auto;
+    opacity: 0.5;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     
 }
-.desktop {
-    display: none;
-}
 .header {
     color: hsl(0, 0%, 100%);
-    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
     font-weight: 700;
     text-align: center;
     padding: 20px 10px 20px 10px;
@@ -42,27 +41,34 @@
 .header span{
     color: hsl(277, 64%, 61%);
 }
-.sub-head {
+.sub-content {
     color: hsl(0, 0%, 100%);
     text-align: center;
-    font-size: 35px;
+    font-family: 'Lexend Deca', sans-serif;;
+    font-size: 20px;
     font-weight: 700;
-    /* padding-top: 20px; */
     padding-bottom: 10px;
 }
-.sub-para{
+.sub-para1 ,.sub-para2 ,.sub-para3{
     color: hsla(0, 0%, 100%, 0.6);
-    text-align: center;
     font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 10px;
+    font-weight: 200;
     padding-bottom: 30px;
+}
+.sub-head span{
+    font-size: 15px;
+    font-weight: bolder;
 }
 .para {
     color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     font-weight: 400;
     text-align: center;
-    padding: 0 40px 40px 40px;
-    line-height: 20px;
+    padding: 0 10px 30px 10px;
+    line-height: 23px;
 
 }
 
@@ -85,26 +91,56 @@
         
     }
     .content{
-        /* width: 500px;
-        height: 450px;
-        padding: 0;
-        margin: 0; */
+        padding-top: 80px;
     }
-    .desktop{
-        display: block;
+    .image{
+        background-image: url(image-header-desktop.jpg);
+        background-size: 500px 450px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+    }
+    .overlay {
         width: 500px;
-        height: 400px;
+        height: 450px;
+        background-color: hsl(277, 64%, 61%);
+        opacity: 0.5;
+        border-top-left-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        
+    }
+    .header{
+        text-align: left;
+        padding: 0 55px 40px 60px;
+        line-height: 40px;
+        font-size: 35px;
+    }
+    .para{
+        width: 400px;
+        text-align: left;
+        padding-left: 60px;
+    }
+    .sub-content{
+        display: flex;
+        text-align: left;
+        padding-top: 50px;
+        padding-left: 60px;
+        font-size: 20px;
+    }.sub-para1 ,.sub-para2 ,.sub-para3{
+        color: hsla(0, 0%, 100%, 0.6);
+        font-size: 12px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 200;
+        padding-top: 10px;
+        padding-bottom: 30px;
 
-
     }
-    .mobile {
-        display: none;
+    .element1{
+        padding-right: 50px;
     }
-    
-    .sub-head{
-        display: inline;
-    }
-    .sub-para{
-        display: inline-block;
+    .element2{
+        padding-right: 50px;
     }
 }
